@@ -5,14 +5,14 @@ export const sponsorConfig: SponsorConfig = {
 	title: "",
 
 	// 页面描述文本，如果留空则使用 i18n 中的翻译
-	description: "",
+	description: "如果喜欢我的创作（主站、博客、celebrate-莎头网站、celebrate-后台管理等等），欢迎通过以下方式打赏我，你的支持是我持续创作的动力！",
 
 	// 打赏用途说明
 	usage:
-		"您的打赏将用于服务器维护、内容创作和功能开发，帮助我持续提供优质内容。",
+		"您的打赏将用于服务器维护、网站创作和功能开发，帮助我持续提供优质内容。",
 
 	// 是否显示打赏者列表
-	showSponsorsList: true,
+	showSponsorsList: false,
 
 	// 是否显示评论区，需要先在commentConfig.ts启用评论系统
 	showComment: true,
@@ -26,7 +26,7 @@ export const sponsorConfig: SponsorConfig = {
 			name: "支付宝",
 			icon: "fa7-brands:alipay",
 			// 收款码图片路径（需要放在 public 目录下）
-			qrCode: "/assets/images/sponsor/alipay.png",
+			qrCode: "https://assets.celebrate.solyi.cc/2026/07/05/20260705073516-6256011b6b5eb91d.png",
 			link: "",
 			description: "使用 支付宝 扫码打赏",
 			enabled: true,
@@ -34,19 +34,19 @@ export const sponsorConfig: SponsorConfig = {
 		{
 			name: "微信",
 			icon: "fa7-brands:weixin",
-			qrCode: "/assets/images/sponsor/wechat.png",
+			qrCode: "https://assets.celebrate.solyi.cc/2026/06/11/20260611154757-141b2a7a5bb396c0.jpg",
 			link: "",
 			description: "使用 微信 扫码打赏",
 			enabled: true,
 		},
-		{
-			name: "ko-fi",
-			icon: "simple-icons:kofi",
-			qrCode: "",
-			link: "https://ko-fi.com/cuteleaf",
-			description: "Buy a Coffee for Firefly",
-			enabled: true,
-		},
+		// {
+		// 	name: "ko-fi",
+		// 	icon: "simple-icons:kofi",
+		// 	qrCode: "",
+		// 	link: "https://ko-fi.com/cuteleaf",
+		// 	description: "Buy a Coffee for Firefly",
+		// 	enabled: true,
+		// },
 		{
 			name: "爱发电",
 			icon: "simple-icons:afdian",
