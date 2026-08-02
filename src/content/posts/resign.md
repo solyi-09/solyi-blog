@@ -2,44 +2,38 @@
 title: 记录真正离职的第一天
 published: 2026-08-01
 pinned: true
-description: 毕业之后为期三年的劳动合同于07月31日正式到期，之后的日子也要重新规划一下，休息一下整装待发～
+description: 一毕业就开始的工作终于可以休息了，之后的日子也要重新规划一下！
 tags: [Markdown, Solyi, 博客, 生活]
 category: 离职日志
 draft: false
-image: api
 slug: resign
 ---
 
-## 🌟 
+## 🌟 离职小记
 
-**Firefly** 是一款基于 Astro 框架和 Fuwari 模板开发的清新美观且现代化个人博客主题模板，专为技术爱好者和内容创作者设计。该主题融合了现代 Web 技术栈，提供了丰富的功能模块和高度可定制的界面，让您能够轻松打造出专业且美观的个人博客网站。
+由于种种原因吧，我离职了！有六天的假期一起在月底使用了，所以这也就是为什么我说8月1日是真正离职的第一天～
 
-
-**🖥️在线预览： [Firefly - Demo site](https://firefly.cuteleaf.cn/)**
-
-**🏠我的博客： [https://blog.cuteleaf.cn](https://blog.cuteleaf.cn/)**
-
-**📝Firefly使用文档： [https://docs-firefly.cuteleaf.cn](https://docs-firefly.cuteleaf.cn/)**
-
-**⭐Firefly开源地址：[https://github.com/CuteLeaf/Firefly](https://github.com/CuteLeaf/Firefly)** 
-
-**⭐Fuwari开源地址：[https://github.com/saicaca/fuwari](https://github.com/saicaca/fuwari)**
-
-::github{repo="CuteLeaf/Firefly"}
-
-::github{repo="saicaca/fuwari"}
-
-![Firefly](./images/1.avif)
+上班就是让人不开心，很不可思议吧，离职在家的日子，我的手表心情指数明显提升，很少再出现一片红了！
 
 
-## 🚀 技术架构
+## ⛈️ 突然的雷暴雨
 
-- **静态站点生成**: 基于 Astro ，提供极快的加载速度和优秀的 SEO 优化
-- **TypeScript 支持**: 完整的类型安全，提升开发体验和代码质量
-- **响应式设计**: 使用 Tailwind CSS 构建，完美适配桌面端和移动端
-- **组件化开发**: 支持 Astro、Svelte 组件，灵活可扩展
+下午洗完被罩就晾外面了，打雷的时候竟然完全没有收的意识！！！直到大雨倾盆而下，后续就是重新洗了......
+
+在下午点了一杯奶茶，刚好卡在下大雨那段时间，感觉可不好意思了，真的是辛苦外卖员了。
+
+看一下窗玻璃，昨天下午好不容易勤快了一次把玻璃都擦了一遍，透亮，还好水珠干了之后没什么影响！
+
+![](https://assets.celebrate.solyi.cc/2026/08/02/20260802162050-1bf2498a42c9f34b.jpg)
 
 
-## 📖 配置说明
+## ⛲️ 雨后的公园
 
-> 📚 **详细配置文档**: 查看 [Firefly使用文档](https://docs-firefly.cuteleaf.cn/) 获取完整的配置指南
+下午的雨来的又快又大，但是走后的天气还不错，温湿度也还好，再加上周六周日晚上公园有打铁花，所以就赶去啦！
+
+人太多太多，由于没有很早就去占位置，所以只能站在其他人后面，再加上个子不高，所以当打铁花开始的那一刻，前面的人抬起手臂举去手机，把我的视线档的严严实实！！！好气，我只能从他们的胳膊下一小块地方看到。
+
+不过打铁花还是非常美丽的，在市里面还可以免费看到打铁花，还是非常不错的，以后想去古城玩，看鱼灯、看盛大的打铁花～
+
+
+![打铁花](https://assets.celebrate.solyi.cc/2026/08/02/20260802155920-36ebeb7c8390f7f5.jpg)

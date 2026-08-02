@@ -6,39 +6,42 @@ description: 理想主义的花最终会盛开在浪漫主义的土壤里,我的
 tags: [Markdown, Solyi, 博客, 生活]
 category: 博客
 draft: false
-image: api
+slug: solyi
 ---
 
-## 🌟 
+## 🌟 关于solyi
 
-**Firefly** 是一款基于 Astro 框架和 Fuwari 模板开发的清新美观且现代化个人博客主题模板，专为技术爱好者和内容创作者设计。该主题融合了现代 Web 技术栈，提供了丰富的功能模块和高度可定制的界面，让您能够轻松打造出专业且美观的个人博客网站。
+"理想主义的花最终会盛开在浪漫主义的土壤里，我的热情永远不会熄灭在现实的平凡之中。" 你好！我是 Solyi ，一个平平无奇的 🍟 个人开发者。喜欢奇思妙想，在喜欢的人和事情上总是拥有无限精力。
 
+INFP，但是会被E人所带动，总的来说，遇到I人会更I，遇到E人有80%可能会变E一些～在不断的调整状态，寻找更好的自己。目前处于：淡淡的就会顺顺的 的状态。
 
-**🖥️在线预览： [Firefly - Demo site](https://firefly.cuteleaf.cn/)**
+喜欢中国乒乓球运动员孙颖莎和王楚钦，这么多年来第一次真心实意的去长久的喜欢，为什么喜欢呢？因为哥姐，我的世界都变得热烈起来了！
 
-**🏠我的博客： [https://blog.cuteleaf.cn](https://blog.cuteleaf.cn/)**
+## 🍟 目前在做什么
 
-**📝Firefly使用文档： [https://docs-firefly.cuteleaf.cn](https://docs-firefly.cuteleaf.cn/)**
+开发了一个关于孙颖莎和王楚钦的网站，并且不断的在优化完善升级；遇到了一群很可爱的朋友们，自己特别 I 的性格由于要运营账号回复信息所以已经往 E 那边走了很大一步了！
 
-**⭐Firefly开源地址：[https://github.com/CuteLeaf/Firefly](https://github.com/CuteLeaf/Firefly)** 
+solyi域名下有：[主站](https://www.solyi.cn)、[blog-博客](https://blog.solyi.cc)、[celebrate-莎头网站](https://celebrate.solyi.cc/home)、[celebrate-docs-莎头网站文档](https://celebrate-docs.solyi.cn)、[celebrate-admin-莎头网站后台管理](https://celebrate-admin.solyi.cc) 这五个网站，还有 [paris-巴黎两周年](https://celebrate.solyi.cc/paris/) 特别制作的网页。欢迎大家前来探索～
 
-**⭐Fuwari开源地址：[https://github.com/saicaca/fuwari](https://github.com/saicaca/fuwari)**
+solyi对应莎头相关，运营的社交账号有：[小红书](https://www.xiaohongshu.com/user/profile/6299a7c50000000019029a2d)、抖音：solyi
+、微信公众号：solyi。
 
-::github{repo="CuteLeaf/Firefly"}
+## 💼 我还想做什么
 
-::github{repo="saicaca/fuwari"}
+由于目前是自由人士，所以除了网站日常开发和维护、账号发帖外，还想要接一些其他的业务：订做个人主页、订做软件（网站、小程序、H5、后台管理等等），或者是付费咨询，如果有需要的话联系我～不限平台，私信即可。
 
-![Firefly](./images/1.avif)
+celebrate-莎头网站也会持续更新更多的功能，在给大家提供更多服务的同时，通过赞赏码和会员制度，希望可以实现网站自给自足，并且为后续发展提供更好的条件～
 
+还想：锻炼！！！多出去走走，拍一拍vlog！想让自己的生活更加充实。
 
-## 🚀 技术架构
+## 🎮 目前在玩
 
-- **静态站点生成**: 基于 Astro ，提供极快的加载速度和优秀的 SEO 优化
-- **TypeScript 支持**: 完整的类型安全，提升开发体验和代码质量
-- **响应式设计**: 使用 Tailwind CSS 构建，完美适配桌面端和移动端
-- **组件化开发**: 支持 Astro、Svelte 组件，灵活可扩展
+光遇！！！喜欢挂挂机，也想录制一些美好的风景。
 
+## 其他
 
-## 📖 配置说明
-
-> 📚 **详细配置文档**: 查看 [Firefly使用文档](https://docs-firefly.cuteleaf.cn/) 获取完整的配置指南
+- 想去看刘宇的演唱会，一直没有抢到票！
+- 想去看孙颖莎和王楚钦比赛
+- 想练习化妆技巧
+- 想做非遗缠花
+- 想做个风铃挂阳台窗户
