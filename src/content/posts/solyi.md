@@ -1,16 +1,15 @@
 ---
-title: 记录真正离职的第一天
-published: 2026-08-01
+title: solyi
+published: 2026-08-02
 pinned: true
-description: 毕业之后为期三年的劳动合同于07月31日正式到期，之后的日子也要重新规划一下，休息一下整装待发～
+description: 理想主义的花最终会盛开在浪漫主义的土壤里,我的热情永远不会熄灭在现实的平凡之中。
 tags: [Markdown, Solyi, 博客, 生活]
-category: 离职日志
+category: 博客
 draft: false
-image: ./images/firefly2.avif
-slug: firefly
+image: api
 ---
 
-## 🌟 项目概述
+## 🌟 
 
 **Firefly** 是一款基于 Astro 框架和 Fuwari 模板开发的清新美观且现代化个人博客主题模板，专为技术爱好者和内容创作者设计。该主题融合了现代 Web 技术栈，提供了丰富的功能模块和高度可定制的界面，让您能够轻松打造出专业且美观的个人博客网站。
 
@@ -42,4 +41,4 @@ slug: firefly
 
 ## 📖 配置说明
 
-> 📚 **详细配置文档**: 查看 [Firefly 使用文档](https://docs-firefly.cuteleaf.cn/) 获取完整的配置指南
+> 📚 **详细配置文档**: 查看 [Firefly使用文档](https://docs-firefly.cuteleaf.cn/) 获取完整的配置指南
