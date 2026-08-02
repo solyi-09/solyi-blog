@@ -317,7 +317,7 @@ export const zh_TW: Translation = {
 	[Key.sponsor]: "打賞",
 	[Key.sponsorTitle]: "打賞支持",
 	[Key.sponsorDescription]:
-		"如果我的內容對你有幫助，歡迎通過以下方式打賞我，你的支持是我持續創作的動力！",
+		"如果喜歡我的創作（主站、部落格、celebrate-莎頭網站、celebrate-後台管理等等），歡迎透過以下方式打賞我，你的支持是我持續創作的動力！",
 	[Key.sponsorMethods]: "打賞方式",
 	[Key.sponsorList]: "打賞列表",
 	[Key.sponsorEmpty]: "暫無打賞記錄",

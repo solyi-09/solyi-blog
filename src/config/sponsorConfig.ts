@@ -5,7 +5,7 @@ export const sponsorConfig: SponsorConfig = {
 	title: "",
 
 	// 页面描述文本，如果留空则使用 i18n 中的翻译
-	description: "如果喜欢我的创作（主站、博客、celebrate-莎头网站、celebrate-后台管理等等），欢迎通过以下方式打赏我，你的支持是我持续创作的动力！",
+	description: "",
 
 	// 打赏用途说明
 	usage:
@@ -39,21 +39,21 @@ export const sponsorConfig: SponsorConfig = {
 			description: "使用 微信 扫码打赏",
 			enabled: true,
 		},
-		// {
-		// 	name: "ko-fi",
-		// 	icon: "simple-icons:kofi",
-		// 	qrCode: "",
-		// 	link: "https://ko-fi.com/cuteleaf",
-		// 	description: "Buy a Coffee for Firefly",
-		// 	enabled: true,
-		// },
+		{
+			name: "ko-fi",
+			icon: "simple-icons:kofi",
+			qrCode: "",
+			link: "https://ko-fi.com/cuteleaf",
+			description: "Buy a Coffee for Firefly",
+			enabled: false,
+		},
 		{
 			name: "爱发电",
 			icon: "simple-icons:afdian",
 			qrCode: "",
 			link: "https://ifdian.net/a/cuteleaf",
 			description: "通过 爱发电 进行打赏",
-			enabled: true,
+			enabled: false,
 		},
 	],
 

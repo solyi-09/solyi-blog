@@ -322,7 +322,7 @@ export const ja: Translation = {
 	[Key.sponsor]: "スポンサー",
 	[Key.sponsorTitle]: "サポート",
 	[Key.sponsorDescription]:
-		"私のコンテンツがあなたの役に立ったなら、以下の方法で私をスポンサーしてください。あなたのサポートは私の継続的な創作の原動力です！",
+		"私の制作物（メインサイト、ブログ、Celebrate 莎頭サイト、Celebrate 管理画面など）を気に入っていただけましたら、以下の方法でご支援いただけるとうれしいです。皆さまのサポートが、創作を続ける原動力になります！",
 	[Key.sponsorMethods]: "支払い方法",
 	[Key.sponsorList]: "スポンサーリスト",
 	[Key.sponsorEmpty]: "スポンサー記録なし",

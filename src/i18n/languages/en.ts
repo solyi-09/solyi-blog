@@ -324,7 +324,7 @@ export const en: Translation = {
 	[Key.sponsor]: "Sponsor",
 	[Key.sponsorTitle]: "Support Me",
 	[Key.sponsorDescription]:
-		"If my content has been helpful to you, welcome to sponsor me through the following methods. Your support is the driving force for my continued creation!",
+		"If you enjoy my work (the main site, blog, Celebrate Shatou website, Celebrate admin panel, and more), you can support me through any of the following methods. Your support keeps me creating!",
 	[Key.sponsorMethods]: "Payment Methods",
 	[Key.sponsorList]: "Sponsors",
 	[Key.sponsorEmpty]: "No sponsors yet",

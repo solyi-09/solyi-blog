@@ -315,7 +315,7 @@ export const zh_CN: Translation = {
 	[Key.sponsor]: "打赏",
 	[Key.sponsorTitle]: "打赏支持",
 	[Key.sponsorDescription]:
-		"如果我的内容对你有帮助，欢迎通过以下方式打赏我，你的支持是我持续创作的动力！",
+		"如果喜欢我的创作（主站、博客、celebrate-莎头网站、celebrate-后台管理等等），欢迎通过以下方式打赏我，你的支持是我持续创作的动力！",
 	[Key.sponsorMethods]: "打赏方式",
 	[Key.sponsorList]: "打赏列表",
 	[Key.sponsorEmpty]: "暂无打赏记录",
