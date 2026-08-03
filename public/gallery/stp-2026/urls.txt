@@ -1,0 +1,9 @@
+# 每行一个图片 URL，支持 jpg/png/webp/avif/gif后缀
+# # 号开头的行为注释，空行会被忽略
+# 示例：
+https://assets.celebrate.solyi.cc/2026/07/29/20260729025913-9e3b5483731c33df.jpg
+https://assets.celebrate.solyi.cc/2026/08/02/20260802153827-622097d027244d15.jpg
+https://assets.celebrate.solyi.cc/2026/08/02/20260802101524-97c5946fd2114db8.jpg
+https://assets.celebrate.solyi.cc/2026/07/30/20260730135841-92dc9ad1879ed79c.jpg
+https://assets.celebrate.solyi.cc/2026/07/29/20260729030545-4a8054f157881d47.jpg
+https://assets.celebrate.solyi.cc/2026/07/29/20260729030550-d705e83bc6a0e0a0.jpg
