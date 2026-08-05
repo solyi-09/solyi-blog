@@ -181,9 +181,9 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			// 组件类型：广告栏组件 1
 			type: "advertisement",
 			// 是否启用该组件
-			enable: false,
+			enable: true,
 			// 是否显示组件标题
-			showTitle: false,
+			showTitle: true,
 			// 组件位置
 			position: "sticky",
 			// 是否在文章详情页显示
@@ -192,13 +192,13 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			specificConfig: {
 				ad: {
 					image: {
-						src: "/assets/images/ad/ad1.webp",
+						src: "/assets/images/ad/ad1.jpg",
 						alt: "广告横幅",
-						link: "https://haoka.lot-ml.com/plugreg.html?agentid=1423316",
+						link: "https://www.givemeoc.com/?aff=12931",
 						external: true,
 					},
 					// 是否允许关闭广告
-					closable: false,
+					closable: true,
 					// 显示次数限制，-1为无限制
 					displayCount: -1,
 					// 组件内边距配置

@@ -21,10 +21,9 @@ INFP，但是会被E人所带动，总的来说，遇到I人会更I，遇到E人
 
 开发了一个关于孙颖莎和王楚钦的网站，并且不断的在优化完善升级；遇到了一群很可爱的朋友们，自己特别 I 的性格由于要运营账号回复信息所以已经往 E 那边走了很大一步了！
 
-solyi域名下有：[主站](https://www.solyi.cn)、[blog-博客](https://blog.solyi.cc)、[celebrate-莎头网站](https://celebrate.solyi.cc/home)、[celebrate-docs-莎头网站文档](https://celebrate-docs.solyi.cn)、[celebrate-admin-莎头网站后台管理](https://celebrate-admin.solyi.cc) 这五个网站，还有 [paris-巴黎两周年](https://celebrate.solyi.cc/paris/) 特别制作的网页。欢迎大家前来探索～
+solyi域名下有：主站、blog-博客、celebrate-莎头网站、celebrate-docs-莎头网站文档、celebrate-admin-莎头网站后台管理 这五个网站，还有paris-巴黎两周年 特别制作的网页。欢迎大家前来探索～
 
-solyi对应莎头相关，运营的社交账号有：[小红书](https://www.xiaohongshu.com/user/profile/6299a7c50000000019029a2d)、抖音：solyi
-、微信公众号：solyi。
+solyi对应莎头相关，运营的社交账号有：小红书：celebrate_小九、抖音：solyi、微信公众号：solyi。
 
 ## 💼 我还想做什么
 
