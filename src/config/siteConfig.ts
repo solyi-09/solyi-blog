@@ -21,7 +21,6 @@ export const siteConfig: SiteConfig = {
 	// 站点关键词
 	keywords: [
 		"solyi",
-		"Firefly",
 		"celebrate",
 		"celebrate-莎头网站",
 		"博客",
