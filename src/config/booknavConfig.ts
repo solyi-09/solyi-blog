@@ -77,7 +77,7 @@ export const booknavConfig: BooknavGroup[] = [
 			},
 			{
 				title: "celebrate",
-				url: "https://www.celebrate.solyi.cn",
+				url: "https://www.celebrate.solyi.cc",
 				desc: "celebrate-莎头网站",
 				icon: "https://celebrate.solyi.cc/fries.svg",
 				weight: 10,
