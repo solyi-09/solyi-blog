@@ -91,12 +91,12 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 		icon: "material-symbols:link",
 		// 子菜单
 		children: [
-			{
-				name: "GitHub",
-				url: "https://github.com/CuteLeaf/Firefly",
-				external: true,
-				icon: "fa7-brands:github",
-			},
+			// {
+			// 	name: "GitHub",
+			// 	url: "https://github.com/CuteLeaf/Firefly",
+			// 	external: true,
+			// 	icon: "fa7-brands:github",
+			// },
 			// {
 			// 	name: "QQ交流群",
 			// 	url: "https://qm.qq.com/q/ZGsFa8qX2G",
