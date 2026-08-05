@@ -12,7 +12,7 @@ export const siteConfig: SiteConfig = {
 	subtitle: "solyi blog",
 
 	// 站点 URL
-	site_url: "https://blog.solyi.cn",
+	site_url: "https://blog.solyi.cc",
 
 	// 站点描述
 	description:
