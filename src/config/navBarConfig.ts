@@ -67,6 +67,9 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 
 			// 书签导航
 			LinkPresets.Booknav,
+
+			// 视频收藏
+			LinkPresets.Favorites,
 		],
 	});
 
@@ -211,6 +214,12 @@ export const LinkPresets: Record<string, NavBarLink> = {
 		url: "/booknav/",
 		icon: "material-symbols:bookmarks",
 		pageKey: "booknav",
+	},
+	Favorites: {
+		name: "视频收藏",
+		url: "/favorites/",
+		icon: "material-symbols:video-library",
+		pageKey: "favorites",
 	},
 };
 

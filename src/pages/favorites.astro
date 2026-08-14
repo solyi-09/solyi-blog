@@ -1,0 +1,133 @@
+---
+import { Icon } from "astro-icon/components";
+import { favoritesPageConfig, siteConfig } from "@/config";
+import MainGridLayout from "@/layouts/MainGridLayout.astro";
+import { getBilibiliFavorites } from "@/utils/bilibili-favorites";
+
+if (!siteConfig.pages.favorites) {
+	return Astro.redirect("/404/");
+}
+
+const favoriteFolders = await Promise.all(
+	favoritesPageConfig.folders.map(async (folder) => ({
+		config: folder,
+		data: await getBilibiliFavorites(folder),
+	})),
+);
+const visibleFolders = favoriteFolders.filter(
+	({ data }) => data.videos.length > 0,
+);
+const totalCount = visibleFolders.reduce(
+	(total, { data }) => total + data.mediaCount,
+	0,
+);
+const fetchError = favoriteFolders.find(({ data }) => data.error)?.data.error;
+const title = favoritesPageConfig.title || "视频收藏";
+const description =
+	favoritesPageConfig.description || "来自 B 站的公开收藏夹。";
+---
+
+<MainGridLayout title={title} description={description}>
+	<div class="flex w-full overflow-hidden relative min-h-32 rounded-(--radius-large)">
+		<div class="card-base z-10 px-5 py-6 md:px-9 relative w-full">
+			<div class="mb-6">
+				<div>
+					<div class="flex items-center gap-3 mb-3">
+						<div class="h-8 w-8 rounded-lg bg-(--primary) flex items-center justify-center text-white dark:text-black/70">
+							<Icon is:inline name="material-symbols:video-library" class="text-[1.5rem]" />
+						</div>
+						<h1 class="text-3xl font-bold text-neutral-900 dark:text-neutral-100">{title}</h1>
+					</div>
+					<p class="text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">{description}</p>
+				</div>
+			</div>
+
+			{visibleFolders.length > 0 ? (
+				<favorites-list>
+					<div class="mb-5 flex flex-wrap gap-2" role="tablist" aria-label="收藏夹分类">
+						{visibleFolders.map(({ config, data }, index) => (
+							<button type="button" role="tab" aria-selected={index === 0 ? "true" : "false"} data-folder-tab={index} class="category-pill px-3 py-1.5 text-sm font-medium" data-active={index === 0 ? "" : undefined}>
+								{config.title || data.title}<span class="ml-1 text-xs opacity-60">{data.mediaCount}</span>
+							</button>
+						))}
+					</div>
+					<div class="relative mb-5">
+						<Icon is:inline name="material-symbols:search" class="absolute left-3 top-1/2 -translate-y-1/2 text-neutral-400 text-lg pointer-events-none" />
+						<input data-search type="search" placeholder="搜索视频或 UP 主" class="w-full rounded-lg border border-(--line-divider) bg-transparent py-2.5 pl-10 pr-4 text-sm text-neutral-900 outline-none transition-colors placeholder:text-neutral-400 focus:border-(--primary) dark:text-neutral-100" />
+					</div>
+					<div class="mb-5 text-sm text-neutral-500 dark:text-neutral-400">共 {totalCount} 个视频</div>
+					{visibleFolders.map(({ config, data }, index) => (
+						<section class:list={["mb-8 last:mb-0", { hidden: index !== 0 }]} data-favorite-group={index}>
+							<div class="mb-3 flex items-center gap-2 border-b border-(--line-divider) pb-2">
+								<Icon is:inline name="material-symbols:folder-open" class="text-xl text-(--primary)" />
+								<h2 class="text-lg font-bold text-neutral-900 dark:text-neutral-100">{config.title || data.title}</h2>
+								<span class="text-xs text-neutral-500 dark:text-neutral-400">{data.mediaCount}</span>
+							</div>
+							<div class="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
+								{data.videos.map((video) => (
+									<a href={video.url} target="_blank" rel="noreferrer" class="favorite-card group overflow-hidden rounded-lg border border-(--line-divider) bg-(--card-bg) transition-all duration-200 hover:border-(--primary) hover:shadow-lg" data-video>
+										<div class="relative aspect-video overflow-hidden bg-neutral-100 dark:bg-neutral-800">
+											<img src={video.cover} alt="" loading="lazy" referrerpolicy="no-referrer" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+											<span class="absolute bottom-2 right-2 rounded bg-black/75 px-1.5 py-0.5 text-xs text-white">{video.duration}</span>
+										</div>
+										<div class="p-3">
+											<h3 title={video.title} class="line-clamp-2 h-10 overflow-hidden text-sm font-semibold leading-5 text-neutral-900 dark:text-neutral-100">{video.title}</h3>
+											<div class="mt-3 flex items-center justify-between gap-2 text-xs text-neutral-500 dark:text-neutral-400">
+												<span class="truncate">{video.upperName}</span>
+												<span class="shrink-0 inline-flex items-center gap-1"><Icon is:inline name="material-symbols:play-circle-outline" />{video.playCount}</span>
+											</div>
+										</div>
+									</a>
+								))}
+							</div>
+						</section>
+					))}
+					<div data-empty class="hidden py-12 text-center text-sm text-neutral-500 dark:text-neutral-400">没有匹配的视频。</div>
+				</favorites-list>
+			) : (
+				<div class="py-16 text-center text-neutral-500 dark:text-neutral-400">
+					<Icon is:inline name="material-symbols:video-library-outline" class="mb-3 text-4xl" />
+					<p>{fetchError || "收藏夹中还没有可展示的视频。"}</p>
+				</div>
+			)}
+		</div>
+	</div>
+
+	<script>
+		if (!customElements.get("favorites-list")) {
+			class FavoritesList extends HTMLElement {
+				connectedCallback() {
+					const input = this.querySelector<HTMLInputElement>("[data-search]");
+					const cards = [...this.querySelectorAll<HTMLElement>("[data-video]")];
+					const groups = [...this.querySelectorAll<HTMLElement>("[data-favorite-group]")];
+					const tabs = [...this.querySelectorAll<HTMLButtonElement>("[data-folder-tab]")];
+					const empty = this.querySelector<HTMLElement>("[data-empty]");
+					tabs.forEach((tab) => tab.addEventListener("click", () => {
+						const selected = tab.dataset.folderTab;
+						tabs.forEach((item) => {
+							const active = item === tab;
+							item.toggleAttribute("data-active", active);
+							item.setAttribute("aria-selected", String(active));
+						});
+						groups.forEach((group) => group.classList.toggle("hidden", group.dataset.favoriteGroup !== selected));
+						if (input) input.value = "";
+						cards.forEach((card) => card.classList.remove("hidden"));
+						empty?.classList.add("hidden");
+					}));
+					input?.addEventListener("input", () => {
+						const query = input.value.trim().toLocaleLowerCase();
+						let visibleCount = 0;
+						const activeGroup = groups.find((group) => !group.classList.contains("hidden"));
+						for (const card of activeGroup?.querySelectorAll<HTMLElement>("[data-video]") || []) {
+							const matches = card.textContent?.toLocaleLowerCase().includes(query);
+							card.classList.toggle("hidden", !matches);
+							if (matches) visibleCount += 1;
+							}
+						empty?.classList.toggle("hidden", visibleCount > 0);
+					});
+				}
+			}
+			customElements.define("favorites-list", FavoritesList);
+		}
+	</script>
+</MainGridLayout>

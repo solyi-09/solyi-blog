@@ -115,6 +115,8 @@ export const siteConfig: SiteConfig = {
 		dynamic: true,
 		// 书签导航页面开关
 		booknav: true,
+		// Bilibili 视频收藏页面开关
+		favorites: true,
 	},
 
 	// 分类导航栏开关，在首页和归档页顶部显示分类快捷导航

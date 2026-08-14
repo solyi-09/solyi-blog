@@ -243,6 +243,9 @@ export default defineConfig({
 				if (pathname === "/booknav/" && !siteConfig.pages.booknav) {
 					return false;
 				}
+				if (pathname === "/favorites/" && !siteConfig.pages.favorites) {
+					return false;
+				}
 				if (pathname === "/sponsor/" && !siteConfig.pages.sponsor) {
 					return false;
 				}
