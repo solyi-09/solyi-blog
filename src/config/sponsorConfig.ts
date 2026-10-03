@@ -26,7 +26,8 @@ export const sponsorConfig: SponsorConfig = {
 			name: "支付宝",
 			icon: "fa7-brands:alipay",
 			// 收款码图片路径（需要放在 public 目录下）
-			qrCode: "https://assets.celebrate.solyi.cc/2026/07/05/20260705073516-6256011b6b5eb91d.png",
+			qrCode:
+				"https://assets.celebrate.solyi.cc/2026/07/05/20260705073516-6256011b6b5eb91d.png",
 			link: "",
 			description: "使用 支付宝 扫码打赏",
 			enabled: true,
@@ -34,7 +35,8 @@ export const sponsorConfig: SponsorConfig = {
 		{
 			name: "微信",
 			icon: "fa7-brands:weixin",
-			qrCode: "https://assets.celebrate.solyi.cc/2026/06/11/20260611154757-141b2a7a5bb396c0.jpg",
+			qrCode:
+				"https://assets.celebrate.solyi.cc/2026/06/11/20260611154757-141b2a7a5bb396c0.jpg",
 			link: "",
 			description: "使用 微信 扫码打赏",
 			enabled: true,

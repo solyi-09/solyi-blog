@@ -46,6 +46,12 @@ function syncFloatingPanelState(panel: HTMLElement): void {
 	if (wasOpen === true && !isOpen) {
 		panel.dispatchEvent(new Event(FLOATING_PANEL_CLOSE_EVENT));
 	}
+
+	// 带 data-floating-panel-scroll-lock 的面板打开时锁定背景滚动（app drawer 行为）；
+	// 该函数在初始化/class 变化/Swup 重扫时都会跑，各类关闭路径都会同步滚动锁。
+	if (panel.hasAttribute("data-floating-panel-scroll-lock")) {
+		document.body.classList.toggle("menu-open", isOpen);
+	}
 }
 
 function setFloatingPanelOpen(panel: HTMLElement, isOpen: boolean): void {
@@ -124,4 +130,21 @@ export function initializeFloatingPanels(root: ParentNode = document): void {
 		document.addEventListener("keydown", handleEscape);
 		escapeListenerAttached = true;
 	}
+}
+
+/** 点击指定面板及其忽略元素之外时，将其关闭（从 Layout.astro 迁出） */
+export function setClickOutsideToClose(panel: string, ignores: string[]): void {
+	document.addEventListener("click", (event) => {
+		const panelDom = document.getElementById(panel);
+		if (!panelDom) return;
+		const tDom = event.target;
+		if (!(tDom instanceof Node)) return; // Ensure the event target is an HTML Node
+		for (const ig of ignores) {
+			const ie = document.getElementById(ig);
+			if (ie === tDom || ie?.contains(tDom)) {
+				return;
+			}
+		}
+		panelDom.classList.add("float-panel-closed");
+	});
 }

@@ -6,7 +6,8 @@ export const profileConfig: ProfileConfig = {
 	// 1. public 目录（以 "/" 开头，不优化）："/assets/images/avatar.webp"
 	// 2. src 目录（不以 "/" 开头，自动优化但会增加构建时间，推荐）："assets/images/avatar.webp"
 	// 3. 远程 URL："https://example.com/avatar.jpg"
-	avatar: "https://assets.celebrate.solyi.cc/2026/07/31/20260731152618-b5ca2995b8297420.png",
+	avatar:
+		"https://assets.celebrate.solyi.cc/2026/07/31/20260731152618-b5ca2995b8297420.png",
 
 	// 名字
 	name: "Solyi",
@@ -43,6 +44,12 @@ export const profileConfig: ProfileConfig = {
 			name: "RSS",
 			icon: "fa7-solid:rss",
 			url: "/rss/",
+			showName: false,
+		},
+		{
+			name: "Atom",
+			icon: "fa7-solid:atom",
+			url: "/atom/",
 			showName: false,
 		},
 	],
